@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+           <input id="numero" type="number" placeholder="Digite a temperatura!"><br>
+           <input id="cf" type="radio" name="grupo">Celsius para Fahrenheit </input><br>
+           <input id="fc" type="radio" name="grupo">Fahrenheit para Celsius </input"><br>
+           <input id="ck" type="radio" name="grupo">Celsius para Kelvin     </input><br>
+           <input id="kc" type="radio" name="grupo">Kelvin para Celsius     </input><br>
+           <input id="fk" type="radio" name="grupo">Fahrenheit para Kelvin </input><br>
+           <input id="kf" type="radio" name="grupo">Kelvin para Fahrenheit </input><br>
+           <button onclick="calculo()">CALCULAR</button><br><br>
+           <p id="r">RESULTADO</p>
+    </center>
+ 
+</body>
+</html>
+<script>
+    var campo = document.getElementById("numero");
+    var radioCF = document.getElementById("cf");
+    var radioCF = document.getElementById("fc");
+    var radioCF = document.getElementById("ck");
+    var radioCF = document.getElementById("kc");
+    var radioCF = document.getElementById("fk");
+    var radioCF = document.getElementById("kf");
+    var radioCF = document.getElementById("r");
+
+    function calculo(){
+        var temperatura = Number(campo.value)
+        if(radioCF.cheked){
+            resultado.innerHTML = temperatura * 9/5 +32 + "°F"
+        }
+        else if(radioFC.cheked){
+                 resultado.innerHTML = (temperatura - 32) * 5/9 + "°C"
+        }
+        else if(radioCK.cheked){
+                 resultado.innerHTML = temperatura - 273.15+ "°C"
+        }
+        else if(radioCK.cheked){
+                 resultado.innerHTML = (temperatura - 273.15 + "°K"
+        }
+        else if(radioFC.cheked){
+                 resultado.innerHTML = (temperatura - 32) * 5/9 +273.15 "°K"
+        }
+        else if(radioFC.cheked){
+                 resultado.innerHTML = (temperatura - 273.15) * 9/5 +32 "°F"
+                                            
+    }
+
+</script>
